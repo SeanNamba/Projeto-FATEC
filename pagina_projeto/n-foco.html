@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto - ALERTA DENGUE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="n-foco.css">
+  <link rel="shortcut icon" href="img/favicon2_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="img/logo-nova.png" alt="logo">
+    </div>
+    <div class="mensagem-central">
+      PREFEITURA DE LINS - "ALERTA DENGUE"
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="n-index.html"><span class="material-icons">home</span> Sobre</a></li>
+      <li><a href="n-foco.html"><span class="material-icons">add_task</span> Novo Foco</a></li>
+      <li><a href="n-busca.html"><span class="material-icons">troubleshoot</span> Buscar Foco</a></li>
+      <li><a href="n-postos.html"><span class="material-icons">local_hospital</span> Postos de Saúde</a></li>
+      <li><a href="n-info.html"><span class="material-icons">medical_information</span> Info. & Campanhas</a></li>
+      <li><a href="n-perfil.html"><span class="material-icons">person</span> Perfil do Usuário</a></li>
+      <li><a href="n-contato.html"><span class="material-icons">mail</span> Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container" style="margin: auto">
+        <div class="item"><div style="text-decoration:none; overflow:hidden;max-width:100%;width:800px;height:450px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Prefeitura+Lins+&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes" id="enable-map-info">premium bootstrap themes</a><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div></div>
+        <div class="item"><section>
+          <h2>Formulário para denuncia</h2>
+          <form action="processa_upload.php" method="post" enctype="multipart/form-data">
+            <label for="imagem"> upload de imagem (opcional) </label>
+            <input type="file" name=imagem accept="image/*">
+            <label for="nome"> nome (opcional) </label>
+            <input type="text" name="nome" placeholder="Nome" required />
+            <label for="email"> email (opcional) </label>
+            <input type="email" name="email" placeholder="E-mail" required />
+            <label for="descrição do foco"> descrição do foco</label>
+            <textarea name="descrição do foco" placeholder="descrição do foco" rows="3" required></textarea>
+            <div class="dois">
+            <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

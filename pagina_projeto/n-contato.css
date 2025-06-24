@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f5f6;
+}
+
+header {
+    position: relative;
+    height: 80px;
+    background-color: #2685BF;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mensagem-central {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.pesquisa {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.pesquisa input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav {
+    background-color: #bae8e8;
+    border-top: 1px solid #ccc;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #a5dada;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #2685BF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    text-indent: 15px;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background-color: lightblue;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 6px;
+}
+
+.item {
+    width: 400px;
+    height: 450px;
+    background-color: #e3f5f6;
+    border-radius: 6px;
+}
+section {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+  h1, h2 {
+    margin-top: 0;
+  }
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    width: 130px;
+    height: 45px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+  }
+  .dois button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .dois button :hover {
+    background-color: #0056b3;}
+    
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 450px;
+        background-color: #e3f5f6;
+        height: 500px;
+        padding: 10px;
+    }
+
+    .container {
+        width: 500px;
+        flex-direction: column-reverse;
+        height: 1100px;
+    }
+
+    nav ul li a {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 450px;
+        background-color: #e3f5f6;
+        height: 500px;
+        padding: 10px;
+    }
+
+    .container {
+        width: 500px;
+        flex-direction: column-reverse;
+        height: 1100px;
+    }
+
+    nav ul li a {
+        padding: 5px;
+    }
+}
